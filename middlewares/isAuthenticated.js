@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config({});
+console.log(process.env.SECRET_KEY);
 const isAuthenticated = async (req, res, next) => {
     try {
         const token = req.cookies.token;
