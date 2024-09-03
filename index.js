@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
     origin: 'https://job-portal-krishna.netlify.app',  // Only the origin
-    // credentials: true
+    credentials: true
 }
 
 app.use(cors(corsOptions));
